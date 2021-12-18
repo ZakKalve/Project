@@ -212,12 +212,15 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook file to the Elk-VM.
 - Update the hosts file located at /etc/ansible/hosts to include the following:
+
 [webservers]
-10.1.0.8 ansible_python_interpreter=/usr/bin/python3
-10.1.0.7 ansible_python_interpreter=/usr/bin/python3
+
+- 10.1.0.8 ansible_python_interpreter=/usr/bin/python3
+- 10.1.0.7 ansible_python_interpreter=/usr/bin/python3
 
 [elk]
-10.2.0.5 ansible_python_interpreter=/usr/bin/python3
+
+- 10.2.0.5 ansible_python_interpreter=/usr/bin/python3
 
 - Run the playbooks, and navigate to Kibana to check that the installation worked as expected.
   - filebeat-playbook.yml
