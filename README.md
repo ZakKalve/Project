@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-Playbook 1: playbook.yml
+#### Playbook 1: playbook.yml
 
   ---
   - name: Config Web VM with Docker
@@ -46,7 +46,7 @@ Playbook 1: playbook.yml
         enabled: yes
 
 
-Playbook 2: install-elk.yml
+#### Playbook 2: install-elk.yml
 
   ---
   - name: config elk VM with docker
@@ -94,7 +94,7 @@ Playbook 2: install-elk.yml
         name: docker
         enabled: yes
 
-Playbook 3: setup.yml
+#### Playbook 3: setup.yml
 
   ---
   - name: Configure Web Servers
